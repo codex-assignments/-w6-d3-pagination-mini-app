@@ -89,10 +89,10 @@ async function main() {
 
       // ******NEXT******
       next.addEventListener("click", async () => {
-        page++;
         if (page >= 43) {
           return;
-        }
+          }
+        page++;
         const data = await getData(baseURL + "/character?page=" + page);
         console.log(data);
         reset();
