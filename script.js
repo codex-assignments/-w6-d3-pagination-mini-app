@@ -90,7 +90,7 @@ async function main() {
       // ******NEXT******
       next.addEventListener("click", async () => {
         page++;
-        if (page >= 41) {
+        if (page >= 43) {
           return;
         }
         const data = await getData(baseURL + "/character?page=" + page);
